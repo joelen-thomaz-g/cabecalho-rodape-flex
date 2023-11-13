@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Navegação</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body > * {
+            border: 1px solid red;
+        }
+        nav, ul {
+            display: flex;
+        }
+        header {
+            background-color: lightgray;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+        }
+        nav {
+            margin: 0 auto;
+            padding: 12px 36px;
+            justify-content: space-between;
+        }
+        ul {
+            list-style: none;
+            gap: 16px;
+        }
+        main {
+            height: 80vh;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+            bottom: 0;
+            height: 150px;
+            background-color: lightgray;
+            gap: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Logo</p>
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        Conteúdo Principal
+    </main>
+    <footer>
+        <div>
+            <p>Pagamentos</p>
+            <ul>
+                <li>Visa</li>
+                <li>Master</li>
+                <li>Pix</li>
+            </ul>
+        </div>
+        <div>Serviços</div>
+        <div>Entrega</div>
+    </footer>
+
+</body>
+</html>
